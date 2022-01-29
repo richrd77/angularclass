@@ -1,0 +1,11 @@
+<p>First component here</p>
+<input type="text" [(ngModel)]="textInput">
+<!--<textarea [(ngModel)]="textInput"></textarea>
+{{textInput}}
+<!-- 
+<button (click)="buttonClickEvent1234(1)">Click</button>
+<button (click)="buttonClickEvent1234(2)">Click</button>
+<button (click)="buttonClickEvent1234(3)">Click</button>
+<button (click)="buttonClickEvent1234(4)">Click</button>
+<button (click)="buttonClickEvent1234(5)">Click</button> -->
+<app-second [fromFirst]="textInput" (informParent)="buttonClickEvent1234($event)" ></app-second>
